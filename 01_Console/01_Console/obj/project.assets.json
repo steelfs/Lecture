@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Atents\\source\\repos\\01_Console\\01_Console\\01_Console.csproj",
+      "projectUniqueName": "F:\\JY\\Lecture\\01_Console\\01_Console\\01_Console.csproj",
       "projectName": "01_Console",
-      "projectPath": "C:\\Users\\Atents\\source\\repos\\01_Console\\01_Console\\01_Console.csproj",
+      "projectPath": "F:\\JY\\Lecture\\01_Console\\01_Console\\01_Console.csproj",
       "packagesPath": "C:\\Users\\Atents\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Atents\\source\\repos\\01_Console\\01_Console\\obj\\",
+      "outputPath": "F:\\JY\\Lecture\\01_Console\\01_Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Atents\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
