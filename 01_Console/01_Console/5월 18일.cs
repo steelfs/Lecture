@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace _01_Console
 {
-    internal class _5월_18일
+    class _5월_18일
     {
+
     }
 }
