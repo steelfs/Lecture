@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 
 namespace _01_Console
 {
@@ -6,16 +7,40 @@ namespace _01_Console
     {
         static void Main(string[] args)
         {
-            int i = 0;
-            Character mike = new Character("마이크", 1, 100);//Character 클래스의 주소값 할당 //new : 변수를 새로 만들어라, 최대한 적게 사용해야 한다. 
-            Character Jack = new Character("Mike",200, 5);
-            Character Jay = new Character("Jay", 200, 5);
+            //int i = 0;
+            //Character mike = new Character("마이크", 1, 100);//Character 클래스의 주소값 할당 //new : 변수를 새로 만들어라, 최대한 적게 사용해야 한다. 
+            //Character Jack = new Character("Mike",200, 5);
+            //Character Jay = new Character("Jay", 200, 5);
 
-            inherit_Parents parent = new inherit_Parents(); //같은 함수가 있을 경우 선언된 클래스의 함수를 실행한다.
-            parent.Test_Func();
+            //inherit_Parents parent = new inherit_Parents(); //같은 함수가 있을 경우 선언된 클래스의 함수를 실행한다.
+            //parent.Test_Func();
 
 
+            //CharacterBase _mike = new Warrior("mike");
+            //CharacterBase _Jack = new Warrior("jack");
+            CharacterBase _mike = new Warrior("mike");
+            CharacterBase _Jay = new Archer("jay");
+
+
+            while (true)
+            {
+                _mike.Attack(_Jay);
+                if (_Jay.IsAlive == false)
+                {
+                    Console.WriteLine($"{_Jay} 가 사망하였습니다.");
+                    return;
+                }
+
+                _Jay.Attack(_mike);
+                if (_mike.IsAlive == false)
+                {
+                    Console.WriteLine($"{_mike} 가 사망하였습니다.");
+                    return;
+                }
+ 
+            }
         }
+
 
         /* 5월 19일 --------------------------------------
          * Disk - Memory(RAM)에 올라간 데이터를 CPU가 처리한다,
