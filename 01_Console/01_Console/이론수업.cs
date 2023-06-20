@@ -584,6 +584,24 @@ namespace _01_Console
          *                                 공개키 
          *  
          *  
+         *  2D오브젝트 - 스프라이트 렌더러// 3D오브젝트 - Mesh Renderer,
+         *  디퓨즈 - 디폴트값, 스펙큘러 - 난반사 어느각도에서 봐도 같은 색
+         *  
+         *  메시랜더러는 반드시 하나이상의 material 을 갖고있다.
+         *  albedo = 빛 반사도
+         *  Opaque = 불투명한 물체
+         *  transperant = 반투명
+         *  cutout
+         *  Fade = 어느부분은 투명하고 어느부분은 불투명할때
+         *  Material은 많으면 많을수록 연산량이 무겁고 많아진다 Material 하나당 drawCall 하나 
+         *  Normal map - 하이폴리곤의 노멀백터를 기준으로 그림자를계산
+         *  highPolygon은 연산량이 부담이 많이된다
+         *  
+         *  Directional Light 태양 역할
+         *  pointLight 지정 영역까지만 빛을 뿜음 횃불같은 느낌
+         *  
+         *  조명이 늘어날수록 연산량이 많아지고 성능에 부하가 많이 걸린다.
+         *  
         */
 
 
